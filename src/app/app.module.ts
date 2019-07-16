@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {CarouselModule} from "ngx-bootstrap";
+import {TooltipModule} from "ngx-bootstrap";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +20,9 @@ import { BookNowBannerComponent } from './pages/home/book-now-banner/book-now-ba
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule.forRoot(),
+    TooltipModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,5 @@
+.navbar
+{
+  border-top:2px solid var(--nestEggOrange);
+  border-bottom:1px solid var(--nestEggGrey);
+}
