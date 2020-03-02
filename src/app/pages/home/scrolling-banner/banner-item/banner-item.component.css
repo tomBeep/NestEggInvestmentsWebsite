@@ -1,0 +1,29 @@
+.title {
+  font-size: x-large;
+  background: var(--nestEggRed);
+  color: white;
+  text-align: center;
+  vertical-align: center;
+}
+
+.description {
+  color: white;
+  text-align: center;
+  vertical-align: center;
+}
+
+.containerText {
+  background: var(--nestEggOrange);
+  position: absolute;
+  float: left;
+  top: 65%;
+  left: 0%;
+  width: 35%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+img{
+  object-fit: cover;
+}
+

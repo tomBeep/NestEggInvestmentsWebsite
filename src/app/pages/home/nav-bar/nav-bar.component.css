@@ -3,3 +3,15 @@
   border-top:2px solid var(--nestEggOrange);
   border-bottom:1px solid var(--nestEggGrey);
 }
+
+a:hover{
+ border-bottom: solid 3px var(--nestEggRed);
+}
+a{
+  border: 3px solid transparent;
+}
+
+.navbar-nav > .active > a {
+  border-bottom: solid 3px var(--nestEggRed);
+}
+

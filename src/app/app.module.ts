@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavBarComponent } from './pages/home/nav-bar/nav-bar.component';
 import { ScrollingBannerComponent } from './pages/home/scrolling-banner/scrolling-banner.component';
 import { BookNowBannerComponent } from './pages/home/book-now-banner/book-now-banner.component';
+import { BannerItemComponent } from './pages/home/scrolling-banner/banner-item/banner-item.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BookNowBannerComponent } from './pages/home/book-now-banner/book-now-ba
     HomeComponent,
     NavBarComponent,
     ScrollingBannerComponent,
-    BookNowBannerComponent
+    BookNowBannerComponent,
+    BannerItemComponent
   ],
   imports: [
     BrowserModule,
@@ -27,4 +29,5 @@ import { BookNowBannerComponent } from './pages/home/book-now-banner/book-now-ba
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {}
