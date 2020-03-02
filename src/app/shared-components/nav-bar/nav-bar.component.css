@@ -10,8 +10,7 @@ a:hover{
 a{
   border: 3px solid transparent;
 }
-
-.navbar-nav > .active > a {
+.active{
   border-bottom: solid 3px var(--nestEggRed);
 }
 
