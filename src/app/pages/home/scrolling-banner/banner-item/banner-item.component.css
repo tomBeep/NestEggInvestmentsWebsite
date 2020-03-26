@@ -8,12 +8,12 @@
 
 .description {
   color: white;
+  background: var(--nestEggOrange);
   text-align: center;
   vertical-align: center;
 }
 
 .containerText {
-  background: var(--nestEggOrange);
   position: absolute;
   float: left;
   top: 65%;
@@ -24,6 +24,6 @@
 }
 
 img{
-  object-fit: cover;
+  object-fit: contain;
 }
 

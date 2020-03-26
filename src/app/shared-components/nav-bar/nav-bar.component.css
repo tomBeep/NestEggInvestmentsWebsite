@@ -13,4 +13,6 @@ a{
 .active{
   border-bottom: solid 3px var(--nestEggRed);
 }
-
+.nav-item{
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+<div class="container mt-4">
+
+  <div id="title">
+    <h3>{{this.title}}
+      <small class="text-muted">{{this.subtitle}}</small>
+    </h3>
+  </div>
+
+  <div id="description" [innerHTML]="this.description">
+  </div>
+
+  <div class="mb-4 mt-4 mr-md-2 ml-md-2">
+  <div *ngIf="this.fee!=null" id="fee">
+    <div class='table-responsive'>
+      <table class='table table-bordered table-striped'>
+        <tbody>
+        <tr class='d-flex'>
+          <th class='col-md-1'>Fee:</th>
+          <td class='col-md-11'>{{this.fee}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div *ngIf="this.customFee!=null" id="customFee" [innerHTML]="this.customFee"></div>
+  </div>
+
+</div>
+<hr/>

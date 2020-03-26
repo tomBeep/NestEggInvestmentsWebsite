@@ -9,10 +9,13 @@ import {NavBarComponent} from './shared-components/nav-bar/nav-bar.component';
 import {ScrollingBannerComponent} from './pages/home/scrolling-banner/scrolling-banner.component';
 import {BookNowBannerComponent} from './pages/home/book-now-banner/book-now-banner.component';
 import {BannerItemComponent} from './pages/home/scrolling-banner/banner-item/banner-item.component';
+import { FooterComponent } from './shared-components/footer/footer.component';
+import { ServicesPageComponent } from './pages/services/services-page/services-page.component';
+import { ServiceComponent } from './pages/services/services-page/service/service.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'services', component: BookNowBannerComponent},
+  {path: 'services', component: ServicesPageComponent},
   {path: 'client-references', component: BookNowBannerComponent},
   {path: 'blog', component: BookNowBannerComponent},
   {path: 'about', component: BookNowBannerComponent},
@@ -38,7 +41,10 @@ const appRoutes: Routes = [
     NavBarComponent,
     ScrollingBannerComponent,
     BookNowBannerComponent,
-    BannerItemComponent
+    BannerItemComponent,
+    FooterComponent,
+    ServicesPageComponent,
+    ServiceComponent
   ],
   imports: [
     RouterModule.forRoot(
