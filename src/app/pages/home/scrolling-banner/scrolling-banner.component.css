@@ -1,0 +1,7 @@
+li{
+  background-color: gray;
+}
+li.active{
+  background-color: var(--nestEggRed);
+}
+

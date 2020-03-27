@@ -1,15 +1,14 @@
 .title {
   font-size: x-large;
-  background: var(--nestEggRed);
-  color: white;
-  text-align: center;
+  font-weight: bold;
+  color: var(--nestEggRed);
+  text-align: left;
   vertical-align: center;
 }
 
 .description {
-  color: white;
-  background: var(--nestEggOrange);
-  text-align: center;
+  color: black;
+  text-align: left;
   vertical-align: center;
 }
 

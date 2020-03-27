@@ -1,8 +1,11 @@
-<app-service
-  title="Initial consultation"
-  subtitle="Free of Charge"
-  fee="Free of Charge"
-  description="<p>
+<div class="container">
+  <h1 class="container text-center mt-4 mb-4">Services</h1>
+  <hr/>
+  <app-service
+    title="Initial consultation"
+    subtitle="Free of Charge"
+    fee="Free of Charge"
+    description="<p>
   Let’s have a chat. An initial meeting with Financial Adviser Dean Edwards is free of charge, and there is no obligation to proceed further.
   This is an opportunity for you to discuss your situation, understand a bit more about what Nest Egg Investments can do for you, and to decide whether you wish to proceed with further financial and investment services with Nest Egg Investments.
   </p>
@@ -10,13 +13,13 @@
   If you wish to go ahead, there are several fixed price offerings available that cover the most popular services:
   </p>
 ">
-</app-service>
+  </app-service>
 
-<app-service
-  title="Investment Advice"
-  subtitle="Making the most out of your savings"
-  fee="$495 (Currently no GST is payable on this fee)"
-  description="<p>
+  <app-service
+    title="Investment Advice"
+    subtitle="Making the most out of your savings"
+    fee="$495 (Currently no GST is payable on this fee)"
+    description="<p>
   If you have funds available to invest or are trying to work out the best way forwards financially, getting good advice as early as possible may be the best thing you can do to be successful.
   Whether you are looking to grow your wealth, meet a particular financial goal, or fund your retirement, I can help to cut through the clutter and provide sound investment advice and recommendations appropriate to your situation.
   Investment recommendations will factor in your personal situation, financial goals, risk profile, and be supported by leading independent research.
@@ -37,13 +40,13 @@
 All advice provided is personalised, backed by leading independent research from Morningstar and FundSource, and in the best interests of the client.  Nest Egg Investments is independent and does not accept any commissions, payments or receive any other benefits from investment product providers.
 </p>
 ">
-</app-service>
+  </app-service>
 
-<app-service
-  title="Financial Model"
-  subtitle="A realistic model of how your money can grow"
-  fee="$495 (Currently no GST is payable on this fee)"
-  description="<p>
+  <app-service
+    title="Financial Model"
+    subtitle="A realistic model of how your money can grow"
+    fee="$495 (Currently no GST is payable on this fee)"
+    description="<p>
   Knowledge is power.
   A comprehensive Financial Model is built from the ground up (as your situation will be unique) and provides a year by year forecast of your financial position, factoring in your current investments (including rental properties), mortgages and other debts, income, expenditure, and expected investment returns.
   The model is fully flexible to show the impacts of changing return assumptions, levels of income, amount of expenditure, one-off costs, KiwiSaver, NZ Super, etc.
@@ -57,13 +60,13 @@ All advice provided is personalised, backed by leading independent research from
   Once completed, the Financial Model is provided to the client in an Excel spreadsheet format for the client to keep and use.
   </p>
 ">
-</app-service>
+  </app-service>
 
-<app-service
-  title="Full Package"
-  subtitle="Both a model and Investment advice in one package"
-  fee="$895 (Currently no GST is payable on this fee)"
-  description="<p>
+  <app-service
+    title="Full Package"
+    subtitle="Both a model and Investment advice in one package"
+    fee="$895 (Currently no GST is payable on this fee)"
+    description="<p>
   Undertaking a Financial Model (described above) and combining this with personalised Investment Advice (also described above) is an excellent way to understand where you are at, what your options are, and how best to invest going forwards.
   These are the most popular services provided by Nest Egg Investments, and if the exercises are carried out at the same time, I can offer a significant discount.
   </p>
@@ -73,27 +76,55 @@ All advice provided is personalised, backed by leading independent research from
   Once completed, the Financial Model is provided to the client in an Excel spreadsheet format for the client to keep and use.
   </p>
 ">
-</app-service>
+  </app-service>
 
-<app-service
-  title="Other Financial Advice"
-  fee="Negotiable"
-  description="<p>
-  If the financial advice you are looking for doesn’t quite fit into the above categories, lets have a chat.  I can usually offer bespoke financial advice for a no-surprises fixed price.
-  </p>
-  <p>
-  Typically the Financial Model will involve a data gathering exercise to get the information needed to prepare the model, and a meeting to go through the model once prepared, to explain the outcomes, and review different scenarios.
-  The model will then be changed and adjusted if necessary.
-  Once completed, the Financial Model is provided to the client in an Excel spreadsheet format for the client to keep and use.
-  </p>
-">
-</app-service>
-
-<app-service
-  title="Managed Investment Service"
-  subtitle=""
-  customFee="$895 (Currently no GST is payable on this fee)"
-  description="<p>
+  <app-service
+    title="Managed Investment Service"
+    subtitle=""
+    customFee="<p>The fee for the Managed Investment Service is based on the amount of funds under management (the value of your investment portfolio), and consists of an Adviser Fee plus Custodial Platform Fees.  Fees are based on the annual rates below, calculated and charged monthly.</p>
+    <div class='table-responsive'>
+      <table class='table table-bordered table-striped'>
+        <thead>
+          <tr>
+            <th scope='col'>Advisor Fee</th>
+            <th scope='col' colspan='2'>Custodial Platform Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr style='background-color: gray'>
+          <td><i>Annual Fee</i></td>
+          <td><i>Portfolio Size (excl Term Deposits & Cash)</i></td>
+          <td><i>Annual Fee</i></td>
+        </tr>
+        <tr>
+          <td rowspan='6'>0.6%</td>
+          <td>Up to $500,000</td>
+          <td>0.25%</td>
+        </tr>
+        <tr>
+          <td>$500,001 to $1,000,000</td>
+          <td>0.20%</td>
+        </tr>
+        <tr>
+          <td>$1,000,001 to $5,000,000</td>
+          <td>0.15%</td>
+        </tr>
+        <tr>
+          <td>Over $5,000,000</td>
+          <td>0.10%</td>
+        </tr>
+        <tr>
+          <td>Term Deposits</td>
+          <td>0.10%</td>
+        </tr>
+        <tr>
+          <td>Cash Management Account</td>
+          <td>0%</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>"
+    description="<p>
   The fully managed investment service is available for some clients with more than $500,000 to invest.
   It builds upon the Financial Model plus Investment Advice by implementing the investment recommendations agreed with you, and having your investment portfolio professionally managed on your behalf by Dean Edwards.
   </p>
@@ -111,13 +142,23 @@ All advice provided is personalised, backed by leading independent research from
   <li>Ongoing access to financial advice. Talk to Dean at any time.</li>
   </ul>
 ">
-</app-service>
+  </app-service>
 
-<app-service
-  title="Not for profit work"
-  subtitle=""
-  description="<p>
+  <app-service
+    title="Other Financial Advice"
+    fee="Negotiable"
+    description="<p>
+  If the financial advice you are looking for doesn’t quite fit into the above categories, lets have a chat.  I can usually offer bespoke financial advice for a no-surprises fixed price.
+  </p>
+">
+  </app-service>
+
+  <app-service
+    title="Not for profit work"
+    subtitle=""
+    description="<p>
   I allocate up to 1 day a week for charitable or not-for-profit work. This is usually in areas such as budgeting support, debt repayment or financial advice for those that are genuinely unable to afford the services of an adviser. Please contact me to discuss this further.
   </p>
   ">
-</app-service>
+  </app-service>
+</div>

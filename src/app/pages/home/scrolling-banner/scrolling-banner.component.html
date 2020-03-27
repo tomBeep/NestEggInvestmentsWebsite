@@ -1,5 +1,10 @@
 <div class="container">
-  <div id="scrollingBanner" class="carousel slide" data-ride = "carousel" data-interval=7000>
+  <div id="scrollingBanner" class="carousel slide" data-ride = "carousel" data-interval=5000>
+    <ol class="carousel-indicators mb-0">
+      <li data-target="#scrollingBanner" data-slide-to="0" class="active"></li>
+      <li data-target="#scrollingBanner" data-slide-to="1"></li>
+      <li data-target="#scrollingBanner" data-slide-to="2"></li>
+    </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <app-banner-item
@@ -10,14 +15,14 @@
       </div>
       <div class="carousel-item">
         <app-banner-item
-          image = "assets/images/cat2.JPEG"
+          image = "assets/images/penny-stack.jpg"
           title="Investment Advice"
           description="Get sound, independent investment advice, backed by research, from an Authorised Financial Adviser.">
         </app-banner-item>
       </div>
       <div class="carousel-item">
         <app-banner-item
-          image = "assets/images/cat3.JPG"
+          image = "assets/images/graph.jpg"
           title="Financial Modelling"
           description="Have a customised Financial Model built from the ground up to answer all the 'what if' questions.">
         </app-banner-item>
@@ -28,7 +33,7 @@
       <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#scrollingBanner" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="carousel-control-next-icon" style="border-color:blue" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
