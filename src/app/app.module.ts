@@ -12,11 +12,12 @@ import {BannerItemComponent} from './pages/home/scrolling-banner/banner-item/ban
 import { FooterComponent } from './shared-components/footer/footer.component';
 import { ServicesPageComponent } from './pages/services/services-page/services-page.component';
 import { ServiceComponent } from './pages/services/services-page/service/service.component';
+import { ClientReferencesComponent } from './pages/client-references/client-references.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'services', component: ServicesPageComponent},
-  {path: 'client-references', component: BookNowBannerComponent},
+  {path: 'client-references', component: ClientReferencesComponent},
   {path: 'blog', component: BookNowBannerComponent},
   {path: 'about', component: BookNowBannerComponent},
   {path: 'investment-principals', component: BookNowBannerComponent},
@@ -44,7 +45,8 @@ const appRoutes: Routes = [
     BannerItemComponent,
     FooterComponent,
     ServicesPageComponent,
-    ServiceComponent
+    ServiceComponent,
+    ClientReferencesComponent
   ],
   imports: [
     RouterModule.forRoot(
