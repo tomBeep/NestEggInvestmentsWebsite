@@ -7,32 +7,36 @@ import {AppComponent} from './app.component';
 import {HomeComponent} from './pages/home/home.component';
 import {NavBarComponent} from './shared-components/nav-bar/nav-bar.component';
 import {ScrollingBannerComponent} from './pages/home/scrolling-banner/scrolling-banner.component';
-import {BookNowBannerComponent} from './pages/home/book-now-banner/book-now-banner.component';
 import {BannerItemComponent} from './pages/home/scrolling-banner/banner-item/banner-item.component';
 import { FooterComponent } from './shared-components/footer/footer.component';
-import { ServicesPageComponent } from './pages/services/services-page/services-page.component';
-import { ServiceComponent } from './pages/services/services-page/service/service.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { ServiceComponent } from './pages/services/service/service.component';
 import { ClientReferencesComponent } from './pages/client-references/client-references.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { AboutComponent } from './pages/about/about.component';
+import { InvestmentPrincipalsComponent } from './pages/investment-principals/investment-principals.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'services', component: ServicesPageComponent},
+  {path: 'services', component: ServicesComponent},
   {path: 'client-references', component: ClientReferencesComponent},
-  {path: 'blog', component: BookNowBannerComponent},
-  {path: 'about', component: BookNowBannerComponent},
-  {path: 'investment-principals', component: BookNowBannerComponent},
-  {path: 'contact', component: BookNowBannerComponent},
-  {
-    path: 'test123',
-    component: BookNowBannerComponent,
-    data: {title: 'Heroes List'}
-  },
+  {path: 'blog', component: BlogComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'investment-principals', component: InvestmentPrincipalsComponent},
+  {path: 'contact', component: ContactComponent},
+  // {
+  //   path: 'test123',
+  //   component: BookNowBannerComponent,
+  //   data: {title: 'Heroes List'}
+  // },
   {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  {path: '**', component: BookNowBannerComponent} //Page Not Found Component
+  {path: '**', component: PageNotFoundComponent} //Page Not Found Component
 ];
 
 @NgModule({
@@ -41,12 +45,16 @@ const appRoutes: Routes = [
     HomeComponent,
     NavBarComponent,
     ScrollingBannerComponent,
-    BookNowBannerComponent,
     BannerItemComponent,
     FooterComponent,
-    ServicesPageComponent,
+    ServicesComponent,
     ServiceComponent,
-    ClientReferencesComponent
+    ClientReferencesComponent,
+    BlogComponent,
+    AboutComponent,
+    InvestmentPrincipalsComponent,
+    ContactComponent,
+    PageNotFoundComponent
   ],
   imports: [
     RouterModule.forRoot(

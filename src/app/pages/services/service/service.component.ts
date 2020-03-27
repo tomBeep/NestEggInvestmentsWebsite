@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {RequiredProperty} from "../../../../shared-components/decorators";
+import {RequiredProperty} from "../../../shared-components/decorators";
 
 @Component({
   selector: 'app-service',
