@@ -4,6 +4,7 @@ fa-icon{
 }
 
 .list-group-item.active{
+  font-weight: bold;
   border: 1px solid var(--nestEggGrey);
   border-right-color: white;
   border-left-color: white;

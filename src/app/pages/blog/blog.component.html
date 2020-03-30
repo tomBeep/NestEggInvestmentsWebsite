@@ -1,3 +1,27 @@
-<div class="container">
-  <p>blog works!</p>
+<app-page-header title="Blog"></app-page-header>
+<div class="row mb-2 mt-2">
+  <div class="col-lg-3">
+    <div multiple class="list-group">
+      <ng-container *ngFor="let blog of blogs | async; index as i;">
+        <div class="list-group-item list-group-item-action"
+             [class.active]="i==0"
+             data-toggle="list"
+             (click)="this.selectedBlog = blog">
+          <div id="selectIcon" class="d-inline" style="height: 100%">&#11166;&#160;</div>
+          <span class="text-nowrap">{{blog.title}} :: {{ blog.date.toDate() | date:'dd, MMM' }}</span>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="col-lg-9" style="border: solid var(--nestEggRed) 1px">
+        <div class="text-left">
+      {{this.selectedBlog!=null && this.selectedBlog.description}}
+    </div>
+    <div class="d-flex flex-row-reverse">
+      <div class="text-center font-weight-bold font-italic m-2">
+        {{this.selectedBlog!=null && this.selectedBlog.author}}
+      </div>
+    </div>
+  </div>
 </div>
+<div style="height: 10rem"></div><!-- Dummy element to ensure that styling across pages is maintained.-->

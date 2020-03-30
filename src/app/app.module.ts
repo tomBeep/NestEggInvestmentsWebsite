@@ -19,6 +19,10 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DeanInfoComponent } from './shared-components/dean-info/dean-info.component';
+import { PageHeaderComponent } from './shared-components/page-header/page-header.component';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { environment } from "src/environments/environment";
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -57,13 +61,16 @@ const appRoutes: Routes = [
     InvestmentPrincipalsComponent,
     ContactComponent,
     PageNotFoundComponent,
-    DeanInfoComponent
+    DeanInfoComponent,
+    PageHeaderComponent
   ],
   imports: [
     RouterModule.forRoot(
       appRoutes,
       // {enableTracing: true} // <-- debugging purposes only
     ),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
     BrowserModule,
     CarouselModule.forRoot(),
     TooltipModule.forRoot(),
