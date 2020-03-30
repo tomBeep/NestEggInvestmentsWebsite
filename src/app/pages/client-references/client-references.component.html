@@ -1,16 +1,25 @@
-<div class="container text-center">
-
+<div class="container">
+  <h1 class="row text-left mt-4 mb-4">Client References</h1>
+  <hr/>
   <div class="row mb-2 mt-2">
     <div class="col-lg-3">
-      <select multiple class="form-control" size={{this.references.length}} id="clientReferenceSelector">
-        <option *ngFor="let ref of references; index as i;" (click)="selectedReference = ref">{{ref.author}}</option>
-      </select>
+      <div multiple class="list-group">
+        <ng-container *ngFor="let ref of references; index as i;">
+          <div class="list-group-item list-group-item-action"
+               [class.active]="i==0"
+               data-toggle="list"
+               (click)="selectedReference = ref">
+            <div id="selectIcon" class="d-inline" style="height: 100%">&#11166;&#160;</div>
+            <span class="text-nowrap">{{ref.author}}</span>
+          </div>
+        </ng-container>
+      </div>
     </div>
     <div class="col-lg-9" style="border: solid var(--nestEggRed) 1px">
       <div class="d-flex flex-row">
         <fa-icon [icon]="faQuoteLeft" size="3x"></fa-icon>
       </div>
-      <div>
+      <div class="text-center">
         {{this.selectedReference.text}}
       </div>
       <div class="d-flex flex-row-reverse">
@@ -19,3 +28,4 @@
     </div>
   </div>
 </div>
+

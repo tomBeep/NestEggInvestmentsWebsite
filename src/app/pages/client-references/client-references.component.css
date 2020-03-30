@@ -3,7 +3,28 @@ fa-icon{
   size: 4rem;
 }
 
-select {
-  overflow-y: auto;
-  height: 100% !important;
+.list-group-item.active{
+  border: 1px solid var(--nestEggGrey);
+  border-right-color: white;
+  border-left-color: white;
+  background: var(--nestEggGrey);
+  color: black;
+}
+
+.list-group-item.active #selectIcon{
+  color: var(--nestEggRed);
+}
+
+.list-group-item:hover{
+  cursor: pointer;
+}
+
+.list-group-item{
+  border-right-color: white;
+  border-left-color: white;
+  text-align: left;
+  overflow-x: hidden;
+}
+h1{
+  color:var(--nestEggRed);
 }

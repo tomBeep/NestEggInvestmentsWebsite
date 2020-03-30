@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faQuoteLeft, faQuoteRight, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-client-references',
@@ -10,6 +10,7 @@ export class ClientReferencesComponent implements OnInit {
 
   faQuoteLeft = faQuoteLeft;
   faQuoteRight = faQuoteRight;
+  faCaretRight = faCaretRight;
 
   references : reference[] = [];
   selectedReference: reference = null;
