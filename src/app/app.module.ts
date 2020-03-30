@@ -17,6 +17,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { InvestmentPrincipalsComponent } from './pages/investment-principals/investment-principals.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DeanInfoComponent } from './shared-components/dean-info/dean-info.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -54,7 +56,8 @@ const appRoutes: Routes = [
     AboutComponent,
     InvestmentPrincipalsComponent,
     ContactComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DeanInfoComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -64,6 +67,7 @@ const appRoutes: Routes = [
     BrowserModule,
     CarouselModule.forRoot(),
     TooltipModule.forRoot(),
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

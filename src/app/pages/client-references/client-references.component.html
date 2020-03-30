@@ -1,22 +1,21 @@
 <div class="container text-center">
 
-  <div class="row">
-    <div class="col-3" (click)="selectedReference = references[0]">{{references[0].author}}</div>
-    <div class="col-3" (click)="selectedReference = references[1]">{{references[1].author}}</div>
-    <div class="col-3" (click)="selectedReference = references[2]">{{references[2].author}}</div>
-    <div class="col-3" (click)="selectedReference = references[3]">{{references[3].author}}</div>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      {{this.selectedReference.text}}
+  <div class="row mb-2 mt-2">
+    <div class="col-lg-3">
+      <select multiple class="form-control" size={{this.references.length}} id="clientReferenceSelector">
+        <option *ngFor="let ref of references; index as i;" (click)="selectedReference = ref">{{ref.author}}</option>
+      </select>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-3"></div>
-    <div class="col-6">
-      See all references
+    <div class="col-lg-9" style="border: solid var(--nestEggRed) 1px">
+      <div class="d-flex flex-row">
+        <fa-icon [icon]="faQuoteLeft" size="3x"></fa-icon>
+      </div>
+      <div>
+        {{this.selectedReference.text}}
+      </div>
+      <div class="d-flex flex-row-reverse">
+        <fa-icon [icon]="faQuoteRight" size="3x"></fa-icon>
+      </div>
     </div>
-    <div class="col-3"></div>
   </div>
 </div>

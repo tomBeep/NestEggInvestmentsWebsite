@@ -1,0 +1,9 @@
+fa-icon{
+  color: var(--nestEggRed);
+  size: 4rem;
+}
+
+select {
+  overflow-y: auto;
+  height: 100% !important;
+}

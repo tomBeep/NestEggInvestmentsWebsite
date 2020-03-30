@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-client-references',
@@ -7,9 +8,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ClientReferencesComponent implements OnInit {
 
+  faQuoteLeft = faQuoteLeft;
+  faQuoteRight = faQuoteRight;
 
   references : reference[] = [];
   selectedReference: reference = null;
+
 
   constructor() {
     this.references.push(new reference("J & S Auckland","We had been thinking about our retirement planning for a while but we were nervous to seek help from a financial advisor. Once we met Dean we were immediately at ease and found him very approachable and knowledegable about financial planning. He was also very transparent about his fees and the services he provided. He provided an excellent financial model for us to assess our situation now and in the future. We highly recommend Dean to help you to financial freedom."));
